@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`byName Mary The first ten records match the previous snapshot 1`] = `
+Array [
+  Object {
+    "count": 7065,
+    "sex": "F",
+    "year": 1880,
+  },
+  Object {
+    "count": 27,
+    "sex": "M",
+    "year": 1880,
+  },
+  Object {
+    "count": 6919,
+    "sex": "F",
+    "year": 1881,
+  },
+  Object {
+    "count": 29,
+    "sex": "M",
+    "year": 1881,
+  },
+  Object {
+    "count": 8148,
+    "sex": "F",
+    "year": 1882,
+  },
+  Object {
+    "count": 30,
+    "sex": "M",
+    "year": 1882,
+  },
+  Object {
+    "count": 8012,
+    "sex": "F",
+    "year": 1883,
+  },
+  Object {
+    "count": 32,
+    "sex": "M",
+    "year": 1883,
+  },
+  Object {
+    "count": 9217,
+    "sex": "F",
+    "year": 1884,
+  },
+  Object {
+    "count": 36,
+    "sex": "M",
+    "year": 1884,
+  },
+]
+`;
+
+exports[`byYear 2016 The first ten records match the previous snapshot 1`] = `
+Array [
+  Object {
+    "count": 19414,
+    "name": "Emma",
+    "sex": "F",
+  },
+  Object {
+    "count": 19246,
+    "name": "Olivia",
+    "sex": "F",
+  },
+  Object {
+    "count": 16237,
+    "name": "Ava",
+    "sex": "F",
+  },
+  Object {
+    "count": 16070,
+    "name": "Sophia",
+    "sex": "F",
+  },
+  Object {
+    "count": 14722,
+    "name": "Isabella",
+    "sex": "F",
+  },
+  Object {
+    "count": 14366,
+    "name": "Mia",
+    "sex": "F",
+  },
+  Object {
+    "count": 13030,
+    "name": "Charlotte",
+    "sex": "F",
+  },
+  Object {
+    "count": 11699,
+    "name": "Abigail",
+    "sex": "F",
+  },
+  Object {
+    "count": 10926,
+    "name": "Emily",
+    "sex": "F",
+  },
+  Object {
+    "count": 10733,
+    "name": "Harper",
+    "sex": "F",
+  },
+]
+`;

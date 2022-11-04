@@ -1,4 +1,6 @@
 const router = require('express').Router();
+const { byName, byYear } = require("us-baby-names");
+
 const after_year = require('./routes/baby_name_year_after');
 const before_year = require('./routes/baby_name_year_before');
 const name_year = require('./routes/baby_name_year');
