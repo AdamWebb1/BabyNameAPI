@@ -1,8 +1,8 @@
 const router = require('express').Router();
 const { byName, byYear } = require("us-baby-names");
 
-const after_year = require('./routes/baby_name_year_after');
-const before_year = require('./routes/baby_name_year_before');
+const after_year = require('./routes/baby_name_after_year');
+const before_year = require('./routes/baby_name_before_year');
 const name_year = require('./routes/baby_name_year');
 const name = require('./routes/baby_name');
 const year_end = require('./routes/baby_year_end');
