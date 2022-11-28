@@ -14,9 +14,6 @@ const getNameBeforeYear = (name, year) => {
 const baby_name_before_year = (req, res) => {
     res.status(200).json({
         success: true,
-        data: countNames(req.params.beforeYear, req.params.name)
+        data: getNameBeforeYear(req.params.beforeYear, req.params.name)
     })
-
-
-    
 }
