@@ -1,11 +1,7 @@
 const { byName, byYear } = require("us-baby-names");
 
 const countNames = (name) => {
-    names = byName[name]
-    total = 0
-    names.forEach(element => {
-        total += element.count
-    });
+    data = byName[name]
     return total
 }
 

@@ -14,7 +14,8 @@ const getNames = (year, letter) => {
         }
         return 0
     })
-    return sorted.filter(n => n.name[0] == letter).sort
+    
+    return sorted.filter(n => n.name[0] == letter).sort()
 }
 
 const baby_year = (req, res) => {

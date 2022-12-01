@@ -23,5 +23,3 @@ const baby_year = (req, res) => {
         data: getNames(req.params.name)
     })
 }
-
-console.log(getNames(2000, "a"))
