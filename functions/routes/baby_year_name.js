@@ -11,3 +11,5 @@ const baby_year_name = (req, res) => {
         data: getCount(req.params.name)
     })
 }
+
+module.exports = baby_year_name

@@ -18,3 +18,5 @@ const baby_name_after_year = (req, res) => {
     })
     
 }
+
+module.exports = baby_name_after_year

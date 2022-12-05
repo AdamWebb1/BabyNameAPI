@@ -17,3 +17,5 @@ const baby_name_before_year = (req, res) => {
         data: getNameBeforeYear(req.params.beforeYear, req.params.name)
     })
 }
+
+module.exports = baby_name_before_year

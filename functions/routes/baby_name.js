@@ -2,7 +2,7 @@ const { byName, byYear } = require("us-baby-names");
 
 const countNames = (name) => {
     data = byName[name]
-    return total
+    return data
 }
 
 const baby_name = (req, res) => {
@@ -11,3 +11,5 @@ const baby_name = (req, res) => {
         data: countNames(req.params.name)
     })
 }
+
+module.exports = baby_name

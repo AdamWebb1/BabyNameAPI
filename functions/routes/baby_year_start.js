@@ -24,3 +24,5 @@ const baby_year = (req, res) => {
         data: getNames(req.params.name)
     })
 }
+
+module.exports = baby_year
