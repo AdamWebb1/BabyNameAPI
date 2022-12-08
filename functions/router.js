@@ -9,7 +9,7 @@ const year_end = require('./routes/baby_year_end');
 const year_name = require('./routes/baby_year_name');
 const year_start = require('./routes/baby_year_start');
 const year = require('./routes/baby_year');
-
+  
 
 router.get("/baby-name/:name/after/:afterYear", after_year);
 router.get("/baby-name/:name/before/:beforeYear", before_year);
@@ -21,4 +21,3 @@ router.get("/baby-year-end/:year/:letter", year_end);
 router.get("/baby-year/:year", year);
 
 module.exports = router;
-// module.exports = formatToHTML;

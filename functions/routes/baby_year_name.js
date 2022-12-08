@@ -1,15 +1,24 @@
 const { byName, byYear } = require("us-baby-names");
+const fix_name = require("../fix_name")
+const format_to_html = require("../format_to_html")
 
 const getCount = (name, year) => {
-    names = byYear[year]
-    return names.filter(n => n.name == name)[0].count
+    try{
+        names = byYear[year]
+        return format_to_html(names.filter(n => n.name == name)[0].count)
+    }
+    catch{
+        return false
+    }
 }
 
 const baby_year_name = (req, res) => {
-    res.status(200).json({
-        success: true,
-        data: getCount(req.params.name)
-    })
+    data = getCount(req.params.name, req.params.year)
+    if (data != false){
+        res.status(200).send(data)
+        return
+    }
+    res.status(404).send("Data not found")
 }
 
 module.exports = baby_year_name
