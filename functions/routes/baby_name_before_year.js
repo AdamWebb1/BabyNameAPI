@@ -11,7 +11,10 @@ const getNameBeforeYear = (name, year) => {
         for (i in names){
             sum += names[i].count
         }
-        return sum
+
+        if (sum == 0){throw "This is a good error, I promise"}
+
+        return format_to_html([sum])
     }
     catch{
         return false
@@ -19,7 +22,7 @@ const getNameBeforeYear = (name, year) => {
 }
 
 const baby_name_before_year = (req, res) => {
-    data = getNameBeforeYear(req.params.beforeYear, req.params.name)
+    data = getNameBeforeYear(req.params.name, req.params.beforeYear)
     if (data != false){
         res.status(200).send(data)
         return

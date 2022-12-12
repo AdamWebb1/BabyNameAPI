@@ -3,9 +3,10 @@ const fix_name = require("../fix_name")
 const format_to_html = require("../format_to_html")
 
 const getCount = (name, year) => {
+    name = fix_name(name)
     try{
         names = byYear[year]
-        return format_to_html(names.filter(n => n.name == name)[0].count)
+        return format_to_html([names.filter(n => n.name == name)[0].count])
     }
     catch{
         return false
