@@ -1,8 +1,10 @@
 const { byName, byYear } = require("us-baby-names");
-const fix_name = require("../fix_name")
 const format_to_html = require("../format_to_html")
 
 const getNames = (year, letter) => {
+    if (letter.length != 1){
+        return false
+    }
     try{
         letter = letter.toUpperCase()
         names = byYear[year]
@@ -19,7 +21,7 @@ const getNames = (year, letter) => {
             return 0
         })
         
-        return sorted.filter(n => n.name[0] == letter).sort()
+        return format_to_html(sorted.filter(n => n.name[0] == letter).sort())
     }
     catch{
         return false
